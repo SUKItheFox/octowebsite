@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<title>OCTO Marketing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Mina"}
+.octo-quarter img{margin-bottom: -6px; cursor: pointer}
+.octo-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="octo-sidebar octo-bar-block octo-black octo-animate-right octo-top octo-text-light-grey octo-large" style="z-index:3;width:200px;display:none;right:0; opacity: 0.9;" id="mySidebar">
+  <a href="javascript:void()" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-32">CLOSE</a> 
+  <a href="#what" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">WHAT?</a> 
+  <a href="#about" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">ABOUT US</a> 
+  <a href="#team" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">TEAM</a>
+  <a href="#services" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">SERVICES</a>
+  <a href="#contact" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="nav-down octo-container octo-white octo-xlarge octo-top">
+  <img class="octo-display-topmiddle" src="assets/images/octo_logo.png" alt="OCTO" style="width:250px; margin-top: -23px" id="Logo">
+  <a href="javascript:void(0)" class="octo-right octo-btn octo-white"  onclick="octo_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="octo-overlay octo-animate-opacity" onclick="octo_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="octo-main octo-content octo-white"  style="max-width:100%;margin-top:200px">
+  
+  <!-- HOME PAGE ROW -->
+  <div class="octo-container octo-dark-grey octo-center octo-text-light-grey " id="home" >
+    <img class="octo-image" src="assets/images/zoe cut out 4.png" alt="OCTO" width="100%">  
+      <h1 class="octo-display-middle octo-display-right" >
+      </h1>
+      <h5 class="octo-text-amber octo-display-middle octo-display-right"> 
+      </h5>       
+  </div>
+
+ 
+
+  <!-- 2nd SECTION ROW -->
+  <div class="octo-container octo-center" id="what">
+    <img class="octo-image" src="assets/images/what is octo 2.png" alt="OCTO" width="100%"  style="margin-top:-15vh;">      
+  </div>
+
+  <!-- De Markt SECTION ROW -->
+
+  <div class="">
+    <h6 class="octo-right-box">Ons eetgedrag verandert snel en is lastiger te voorspellen. Buzzwords zijn gezondheid, duurzaam, bio, lokaal maar er zijn andere zaken van belang. Gemak in de (bio)supermarkt, thuisbezorgd, foodboxes & niet te lang in de keuken willen staan maar wel lekker en verantwoord willen eten.
+    En we zijn lekker inconsequent: flexitariër, vegetariër en klimatariër maar we eten af en toe graag een hamburger. We zoeken steeds exotischer superfoods
+    maar letten ook op de herkomst en houden van lokaal.
+
+    Het aantal eenpersoons huishoudens is de laatste 10 jaar met 20% gestegen en zal door de vergrijzing verder stijgen.
+    Jongeren aan de andere kant van het spectrum, de millenials of boomerang generatie, blijven vaker thuis wonen en hebben relatief veel te besteden. Het benoemen van ‘ de klant ‘ is lastiger geworden.</h6>
+  </div>
+
+  <!-- SLIDESHOW ROW -->
+  <div class="octo-slideshow octo-padding-164" style="max-width: 100%;height:60vh;">
+    
+    <img class="mySlides octo-padding-48" src="assets/images/slideshow/DSC08459.jpg" style="width:auto;height:500px;margin-left: -10vw;">
+    <img class="mySlides octo-padding-48" src="assets/images/slideshow/DSC08463.jpg" style="width:auto;height:500px;margin-left: -10vw;">
+    <img class="mySlides octo-padding-48" src="assets/images/slideshow/DSC08550.jpg" style="width:auto;height:500px;margin-left: -10vw;">
+    <img class="mySlides octo-padding-48" src="assets/images/slideshow/DSC08879.jpg" style="width:auto;height:500px;margin-left: -10vw;">
+    <img class="mySlides octo-padding-48" src="assets/images/slideshow/DSC09108.jpg" style="width:auto;height:500px;margin-left: -10vw;">
+    <img class="mySlides octo-padding-48" src="assets/images/slideshow/DSC09164.jpg" style="width:auto;height:500px;margin-left: -10vw;">
+   
+  </div>
+    
+
+  
+
+  <!-- SLIDESHOW ROW END -->
+ 
+
+
+  <!-- Services SECTION ROW -->
+
+  <div class="octo-container octo-center octo-padding-164" id="services">
+    <img class="octo-image octo-padding-32" style="margin-top: 200px;" src="assets/images/cutting board 3.png" alt="OCTO" width="100%" >      
+  </div>
+
+  <!-- Team SECTION ROW -->
+  <div class="octo-container" id="team">
+    <img class="octo-image" src="assets/images/image_3.jpg" alt="OCTO" width="100%" >      
+  </div>
+
+  
+
+  <!-- Contact SECTION ROW -->  
+  <!-- Footer -->
+  <footer class="octo-container octo-white" id="contact">      
+      
+      
+      <!-- Sliding div starts here -->
+      <div id="contact-slider" style="right:-330px;">
+            <div id="contact-sidebar" onclick="open_panel()"> 
+              <img src="assets/images/red_mailbox.png">
+            </div>
+          <div id="contact-header">
+            <h2>Contact Octo</h2>
+            
+            <input name="dname" type="text" value="Name">
+            <input name="demail" type="text" value="Email">
+            <h4>Query type</h4>
+            <select>
+              <option>Inquiry</option>
+              <option>Cooperation</option>
+              <option>Saying hi!</option>
+              <option>Other</option>
+            </select>
+            <textarea>Message</textarea>
+            <button>Send Message</button>
+          </div>
+      </div>
+      <!-- Sliding div ends here -->   
+      <img class="octo-image" src="assets/images/contact 2.png" alt="OCTO" width="100%" >
+      <div class="octo-center">
+        <a href="#home" class="octo-button octo-center octo-white"><i class="fa fa-arrow-up octo-margin-right"></i>To the top</a>
+      </div>  
+      
+        
+      
+      
+  
+
+    <div class="octo-section octo-center octo-white">
+        <i>Copyright Octo Marketing 2017</i>
+        <i class="octo-xlarge fa fa-facebook-official octo-hover-opacity"></i>
+        <i class="octo-xlarge fa fa-instagram octo-hover-opacity"></i>
+        <i class="octo-xlarge fa fa-linkedin octo-hover-opacity"></i>        
+    </div>
+
+    <div class="octo-center octo-section octo-white">Crafted by <a href="https://github.com/SUKItheFox" class="equal-hover-text-green"> <img src="assets/images/SUKItheFox9.png" width="35"></a></div> 
+  
+  </footer>
+<!-- End page content -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+// Script for the slideshow
+
+$(function(){
+    $('.octo-slideshow .mySlides:gt(0)').hide();
+    setInterval(function(){
+      $('.octo-slideshow :first-child').fadeOut()
+         .next('.mySlides').fadeIn()
+         .end().appendTo('.octo-slideshow');}, 
+      2000);
+}); 
+
+</script>
+
+<script>
+// Script to open and close sidebar
+function octo_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function octo_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+<script>
+// Hide Header on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 16;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+
+<script>
+// Shrink logo on scroll down
+
+window.onscroll = function() {
+  growShrinkLogo()
+};
+
+function growShrinkLogo() {
+  var Logo = document.getElementById("Logo")
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    Logo.style.width = '120px';
+  } else {
+    Logo.style.width = '250px';
+  }
+}
+
+</script>
+
+<script>
+/* CONTACT FORM SLIDE OUT
+------------------------------------------------------------
+Function to activate form button to open the slider.
+------------------------------------------------------------
+*/
+function open_panel() {
+slideIt();
+var a = document.getElementById("contact-sidebar");
+a.setAttribute("id", "contact-sidebar1");
+a.setAttribute("onclick", "close_panel()");
+}
+/*
+------------------------------------------------------------
+Function to slide the sidebar form (open form)
+------------------------------------------------------------
+*/
+function slideIt() {
+var slidingDiv = document.getElementById("contact-slider");
+var stopPosition = 0;
+if (parseInt(slidingDiv.style.right) < stopPosition) {
+slidingDiv.style.right = parseInt(slidingDiv.style.right) + 2 + "px";
+setTimeout(slideIt, 1);
+}
+}
+/*
+------------------------------------------------------------
+Function to activate form button to close the slider.
+------------------------------------------------------------
+*/
+function close_panel() {
+slideIn();
+a = document.getElementById("contact-sidebar1");
+a.setAttribute("id", "contact-sidebar");
+a.setAttribute("onclick", "open_panel()");
+}
+/*
+------------------------------------------------------------
+Function to slide the sidebar form (slide in form)
+------------------------------------------------------------
+*/
+function slideIn() {
+var slidingDiv = document.getElementById("contact-slider");
+var stopPosition = -330;
+if (parseInt(slidingDiv.style.right) > stopPosition) {
+slidingDiv.style.right = parseInt(slidingDiv.style.right) - 2 + "px";
+setTimeout(slideIn, 1);
+}
+}
+
+</script>
+
+</body>
+</html>
