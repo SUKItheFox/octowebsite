@@ -521,23 +521,6 @@ maar letten ook op de herkomst en houden van lokaal.</h6>
 	
 	
 	
-	<!--script>
-	// Shrink logo on scroll down
-
-	window.onscroll = function() {
-	  growShrinkLogo()
-	};
-
-	function growShrinkLogo() {
-	  var Logo = document.getElementById("Logo")
-	  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-	    Logo.style.width = '30px';
-	  } else {
-	    Logo.style.width = '40px';
-	  }
-	}
-
-	</script-->
 
 	<script>
 	// Script for the slideshow
@@ -587,50 +570,6 @@ maar letten ook op de herkomst en houden van lokaal.</h6>
 	  dots[slideIndex-1].className += " team-color";
 	}
 	</script>
-	<!--script>
-
-
-
-	// Script for team section scrolling elements
-	$(document).ready(function() {
-		$("button[href*=#]").bind("click", function(e) {
-			e.preventDefault(); // prevent hard jump, the default behavior
-
-			var target = $(this).attr("href"); // Set the target as variable
-
-			// perform animated scrolling by getting top-position of target-element and set it as scroll target
-			$(".team-scroll")
-				.stop()
-				.animate(
-					{
-						scrollTop: $(target).offset().top
-					},
-					5,
-					function() {
-						location.hash = target; //attach the hash (#jumptarget) to the pageurl
-					}
-				);
-
-			return false;
-		});
-	});
-
-	$(window)
-		.scroll(function() {
-			var scrollDistance = $(window).scrollTop();
-
-			// Assign active class to photo links while scrolling
-			$(".teamSlides").each(function(i) {
-				if ($(this).position().top <= scrollDistance) {
-					$(".team-scroll button.active").removeClass("active");
-					$(".team-scroll button")
-						.eq(i)
-						.addClass("active");
-				}
-			});
-		})
-		.scroll();
-	</script-->
-
+	
 </body>
 </html>
