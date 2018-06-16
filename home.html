@@ -2,10 +2,11 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title>Octo Marketing</title>
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="images/logo favicon.png"/>
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type='text/css'/>
+	<link href="https://fonts.googleapis.com/css?family=Flamenco|Gruppo" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/animat/animate.min.css" />
 	<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
@@ -25,21 +26,22 @@
 	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 	
 	<!-- NAVIGATION -->
-	<nav class="octo-sidebar octo-bar-block octo-black octo-animate-right octo-top octo-text-light-grey octo-large" style="z-index:3;width:20vw;display:none;right:0; opacity: 0.9;" id="mySidebar">
+	<nav class="octo-sidebar octo-bar-block octo-black octo-animate-right octo-top octo-text-light-grey octo-large octo_nav" id="mySidebar">
 	  <a href="javascript:void()" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-32">CLOSE</a> 
-	  <a href="#menus" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">COMPANY</a> 
-	  <a href="#abouts" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">MISSION</a> 
-	  <a href="#special" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">SERVICES</a>
-	  <a href="#features" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">TEAM</a>
+	  <a href="#company" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">COMPANY</a> 
+	  <a href="#mission" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">MISSION</a> 
+	  <a href="#services" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">SERVICES</a>
+	  <a href="#team" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">TEAM</a>
 	  <a href="#footer" onclick="octo_close()" class="octo-bar-item octo-button octo-center octo-padding-16">CONTACT</a>
 	</nav>
 
 	<!-- Top menu on small screens -->
-	<header class="nav-down octo-container octo-white octo-xlarge octo-top">
-	  <img class="octo-display-topmiddle" src="images/octo_logo.png" alt="OCTO" style="width:12vw; margin-top: -1vh;" id="Logo">
+	<header class="nav-down octo-container octo-white">
+	  <img src="images/logo only.png" alt="OCTO"  id="Logo">
+	  
 	  <a href="javascript:void(0)" class="octo-right octo-btn octo-white"  onclick="octo_open()">☰</a>
 	</header>
-
+	<img class="logo-down logo-disappear" src="images/logo MARKETING and leaves.png">
 	<!-- Overlay effect when opening sidebar on small screens -->
 	<div class="octo-overlay octo-animate-opacity" onclick="octo_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 	
@@ -48,10 +50,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="main_banner_area text-center">
-					<div class="col-md-5 col-sm-5 col-md-offset-7 col-sm-offset-7">
-						<div class="single_banner_text wow zoomIn" data-wow-duration="1s" style="margin-top: -100px;">
-							<p class="octo-text-black" >OCTO marketing voor eten & drinken van goede komaf.</p>
-							<h7 class="octo-text-white" style="font-size: large;">Heeft u een mooi restaurant, een groothandel met prachtige foodproducten of produceert u ambachtelijk eten & drinken en wilt u uw business laten groeien? <br/>Schakel dan de foodmarketeers van OCTO in! Gedreven en ervaren mensen die alle disciplines beheersen, van strategie & concept tot meetbare (online) campagnes. </h7>
+					<div class="col-md-offset-7 ">
+						<div class="single_banner_text wow zoomIn" data-wow-duration="1s">
+							<p>OCTO marketing voor eten & drinken van goede komaf.</p>
+							<h6 class="octo-text-white" >Heeft u een mooi restaurant, een groothandel met prachtige foodproducten of produceert u ambachtelijk eten & drinken en wilt u uw business laten groeien?<br> <br/>Schakel dan de foodmarketeers van OCTO in! Gedreven en ervaren mensen die alle disciplines beheersen, van strategie & concept tot meetbare (online) campagnes. </h6>
 							
 							<div class="separator"></div>
 						</div>
@@ -59,7 +61,7 @@
 					
 					
 					<div class="scrolldown">
-						<a href="#menus" class="scroll_btn"></a>
+						<a href="#company" class="scroll_btn"></a>
 					</div>
 				</div>
 				
@@ -67,15 +69,17 @@
 			</div>
 		</div>
 	</section><!-- End of Banner Section -->
+
+	<!-- Start Company Section -->
 	
-	<section id="menus" class="menus sections about_background">
+	<section id="company" class="menus sections about_background">
 
 		<div class="container octo-padding-32">
 
 			<div class="row">
 				<div class="main_menus">
-					<div class="head_title text-center wow slideInDown" data-wow-duration="2s">
-						<h2 class="octo-text-black">Arendsoog en de Octopus</h2>
+					<div class="head_title single_abouts text-center wow " data-wow-duration="2s">
+						<p class="octo-text-black">Arendsoog en de Octopus</p>
 						<div class="separator_black"></div>
 					</div>
 					
@@ -84,8 +88,8 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_menus wow slideInLeft" data-wow-duration="1.5s">
 							<ul>
-								<li> <span class="octo-text-white" style="font-size: larger;"> Sardinië 1998. Levien stond te springen en te dansen op de steiger. “ een octopus, een octopus “ schreeuwde hij. Zijn ouders kwamen kijken en zagen….niets! 
-Hoezeer Levien zijn best ook deed om te duiden waar de octopus te zien was, zijn ouders konden het niet zien.
+								<li> <span class="octo-text-white"> Sardinië 1998. Levien stond te springen en te dansen op de steiger.<br> “Een octopus, een octopus!“ schreeuwde hij. Zijn ouders kwamen kijken en zagen…niets! <br>
+Hoezeer Levien zijn best ook deed om te duiden waar de octopus te zien was, zijn ouders konden het niet zien.<br>
 De 5-jarige bedacht een list: hij leidde de ogen van zijn ouders van de steiger naar een witte steen, vervolgens een blauwe steen naar een klein wit steentje. Op dat steentje zat inderdaad een schitterend octopusje!</span></li>
 								
 							</ul>
@@ -95,8 +99,8 @@ De 5-jarige bedacht een list: hij leidde de ogen van zijn ouders van de steiger 
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_menus wow slideInRight" data-wow-duration="1.5s">
 							<ul>
-								<li> <span class="octo-text-white" style="font-size: larger;"> De 5-jarige van toen is nu kunstenaar en fotograaf bij Octo Marketing. Hij heeft nog steeds arendsogen en maakt de origineelste foodfotografie.
-Octo Marketing vindt dit verhaaltje illustratief voor onze werkwijze: altijd op zoek naar het unieke & waar nodig leiden we u van de steiger naar het octopusje op de steen.</span></li>
+								<li> <span class="octo-text-white"> De 5-jarige van toen is <br>nu kunstenaar en fotograaf bij Octo Marketing. Hij heeft nog steeds arendsogen en maakt de origineelste fotografie.<br>
+Octo Marketing vindt dit verhaaltje illustratief voor onze werkwijze: <br>altijd op zoek naar het unieke &<br> waar nodig leiden we u van de steiger naar het octopusje op de steen.</span></li>
 								
 							</ul>
 						</div>
@@ -105,83 +109,88 @@ Octo Marketing vindt dit verhaaltje illustratief voor onze werkwijze: altijd op 
 			</div>
 		</div>
 		<div class="scrolldown">
-			<a href="#abouts" class="scroll_btn"></a>
+			<a href="#mission" class="scroll_btn"></a>
 		</div>
 	</section>
 
-	<section id="abouts" class="abouts sections markt_background">
+	<!-- End of Company Section -->
+
+
+	<!-- Start Mission Section -->
+
+	<section id="mission" class="abouts sections markt_background">
 		<div class="container">
 			<div class="row">
 				<div class="main_abouts">
 					<div class="col-md-6 col-sm-6 col-xs-12">
-						<div class="single_abouts wow slideInLeft" data-wow-duration="2s">
+						<div class="single_abouts wow " data-wow-duration="2s">
 							<div class="head_title text-center">
-								<h2 class="octo-text-white">Wat gebeurt er in de markt?</h2>
+								<p class="octo-text-white">Wat gebeurt er in de markt?</p>
 								<div class="separator"></div>
 							</div>
 							
-							<h7 class="octo-text-white" style="font-size: larger;">Ons eetgedrag verandert snel en is lastiger te voorspellen. Buzzwords zijn gezondheid, duurzaam, bio, lokaal maar er zijn andere zaken van belang. Gemak in de (bio)supermarkt, thuisbezorgd, foodboxes & niet te lang in de keuken willen staan maar wel lekker en verantwoord willen eten.
+							<h6 class="octo-text-white" >Ons eetgedrag verandert snel en is lastiger te voorspellen. Buzzwords zijn gezondheid, duurzaam, bio, lokaal maar er zijn andere zaken van belang. Gemak in de (bio)supermarkt, thuisbezorgd, foodboxes & niet te lang in de keuken willen staan maar wel lekker en verantwoord willen eten.
 En we zijn lekker inconsequent: flexitariër, vegetariër en klimatariër maar we eten af en toe graag een hamburger. We zoeken steeds exotischer superfoods
-maar letten ook op de herkomst en houden van lokaal.</h7>
+maar letten ook op de herkomst en houden van lokaal.</h6>
 							
 						</div>
 					</div>
 					
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="single_abouts wow slideInRight" data-wow-duration="2s">
-							<img src="images/abimg.png" alt="" />
+							<img src="images/abimg.png" alt="" /> 
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="scrolldown">
-			<a href="#special" class="scroll_btn"></a>
+			<a href="#services" class="scroll_btn"></a>
 		</div>
-	</section><!-- End of Abouts Section -->
+	</section><!-- End of Mission Section -->
 	
 
 	
 	
-	
-	<section id="special" class="special sections special_background">
+	<!-- Start Services Section -->
+	<section id="services" class="special sections special_background">
 
 		<div class="container">
 			<div class="row">
-				<div class="head_title text-center wow slideInLeft" data-wow-duration="1.5s">
-					<h2 class="octo-text-white">Waar komt Octo om de hoek kijken?</h2><br/>
-					<h7 class="octo-text-white">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7>
+				<div class="single_special head_title text-center wow" data-wow-duration="1.5s">
+					<p class="octo-text-white">Waar komt Octo om de hoek kijken?</p><br/>
+					<h6 class="octo-text-white">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h6>
 					<div class="separator_black"></div>
 				</div>
-				<div class="main_special text-center wow slideInUp" data-wow-duration="3s">
+				<div class="main_special text-center wow" data-wow-duration="3s">
 					
 					<div class="octo-col octo-third ">
 						<div class="">
 							
-							<div class="text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class="text-center padding_16">
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black" >Meedenken en meeschrijven aan een verkoop- en marketingplan</h7>
+								<h6 class="octo-text-black" >Meedenken en meeschrijven aan een verkoop- en marketingplan</h6>
 								
 							</div>
 						</div>
 					
 						<div class="">
 							
-							<div class="text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class="text-center padding_16" >
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Strategie en uitvoering van duurzame projecten in de foodsector</h7>
+								<h6 class="octo-text-black">Strategie en uitvoering van duurzame projecten in de foodsector</h6>
 								
 							</div>							
 						</div>
 					
 						<div class="">
 							
-							<div class=" text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class=" text-center padding_16" >
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Uw gasten en klanten frequent op de hoogte houden en nog enthousiaster te maken</h7>
+								<h6 class="octo-text-black">Uw gasten en klanten frequent op de hoogte houden en nog enthousiaster te maken</h6>
 								
 							</div>							
 						</div>
@@ -190,10 +199,10 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 					<div class="octo-col octo-third">
 						<div class="">
 							
-							<div class="text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class="text-center padding_16" >
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Distributie van content en het meten van resultaten</h7>
+								<h6 class="octo-text-black">Distributie van content en het meten van resultaten</h6>
 								
 							</div>							
 						</div>
@@ -202,20 +211,20 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 					
 						<div class="">
 							
-							<div class="text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class="text-center padding_16" >
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Benoemen van buyer persona <br> Schrijven van content</h7>
+								<h6 class="octo-text-black">Benoemen van buyer persona <br> Schrijven van content</h6>
 								
 							</div>							
 						</div>
 					
 						<div class="">
 							
-							<div class="text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class="text-center padding_16" >
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Klantdatabases analyseren en uitkomst verwerken in de strategie</h7>
+								<h6 class="octo-text-black">Klantdatabases analyseren en uitkomst verwerken in de strategie</h6>
 								
 							</div>							
 						</div>
@@ -223,30 +232,30 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 					<div class="octo-col octo-third ">
 						<div class="">
 							
-							<div class=" text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class=" text-center padding_16" >
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Onderscheidende concepten bedenken en succesvol in de markt zetten</h7>
+								<h6 class="octo-text-black">Onderscheidende concepten bedenken en succesvol in de markt zetten</h6>
 								
 							</div>							
 						</div>
 					
 						<div class="">
 							
-							<div class=" text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class=" text-center padding_16" >
 								<h3> <br/></h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Uw wederverkopers enthousiasmeren en meer laten verkopen</h7>
+								<h6 class="octo-text-black">Uw wederverkopers enthousiasmeren en meer laten verkopen</h6>
 								
 							</div>							
 						</div>
 					
 						<div class="">
 							
-							<div class=" text-center octo-padding-16" style="padding-left: 16px;padding-right: 16px;">
+							<div class=" text-center padding_16" >
 								<h3>  <br/>  </h3>
 								<div class=""></div>
-								<h7 class="octo-text-black">Ontwerpen & design – schitterende fotografie - bouwen van prachtige websites</h7>
+								<h6 class="octo-text-black">Ontwerpen & design – schitterende fotografie - bouwen van prachtige websites</h6>
 								
 							</div>							
 						</div>
@@ -256,103 +265,92 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 			</div>
 		</div>
 		<div class="scrolldown">
-			<a href="#features" class="scroll_btn"></a>
+			<a href="#team" class="scroll_btn"></a>
 		</div>
-	</section>
+	</section><!-- End Services Section -->
 
 
 	
 	
 	
 	
-	
+	<!-- Start Team Section -->
 
-	<section id="features" class="features octo-text-black" >		
-		<div class="section">
-		    <div class="team-section">
-		      <div class="pointer">
-		        <div class="point-1"></div>
-		        <div class="point-2"></div>
-		        <div class="line"></div>
-		      </div>
-		      <ul class="team-list">
-		        <li class="team-member" data-name="Levien Lockefeer" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 2" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="MLevien Lockefeer 3" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 4" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 5" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 6" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 7" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 8" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 9" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 10" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 11" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 12" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 13" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		        <li class="team-member" data-name="Levien Lockefeer 14" data-job-title="Developer"><img src="images/abimg.png" alt="user image"/>
-		          <div class="hover-effect"></div>
-		        </li>
-		      </ul>
+	<section id="team" class="team-background octo-text-black team-area" >		
+		<div class="scrolldown">
+			<a href="#footer" class="scroll_btn"></a>
+		</div>
+		
+		<div>
+			<div class="team-scroll col-sm-1 octo-padding-16 padding_left_35" >
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(1)" href="#1"><img class="octo-circle" src="images/team initials test CL.png"></button> 
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(2)" href="#2"><img class="octo-circle" src="images/DSC09011.jpg" ></button> 
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(3)" href="#3"><img class="octo-circle"src="images/DSC08630.jpg" ></button>
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(4)" href="#4"><img class="octo-circle" src="images/DSC01302_01.jpg" ></button> 
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(5)" href="#5"><img class="octo-circle" src="images/DSC09011.jpg" ></button> 
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(6)" href="#6"><img class="octo-circle"src="images/DSC08630.jpg" ></button>
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(7)" href="#7"><img class="octo-circle" src="images/DSC01302_01.jpg"></button> 
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(8)" href="#8"><img class="octo-circle" src="images/DSC09011.jpg" ></button> 
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(9)" href="#9"><img class="octo-circle"src="images/DSC08630.jpg" "></button>
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(10)" href="#10"><img class="octo-circle"src="images/DSC08630.jpg" ></button>
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(11)" href="#11"><img class="octo-circle"src="images/DSC08630.jpg" ></button>
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(12)" href="#12"><img class="octo-circle"src="images/DSC08630.jpg" ></button>
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(13)" href="#13"><img class="octo-circle"src="images/DSC08630.jpg" ></button>
+			  <button class="octo-btn octo-circle demo" onclick="currentDiv(14)" href="#14"><img class="octo-circle"src="images/DSC08630.jpg" ></button>
+			</div>
+		    
+		    <div class="team-container container">
+		    	<div class="single_team head_title text-center">
+					<p class="octo-text-white">Het team van Octo Marketeers</p>
+					<div class="separator"></div>
+				</div>
+			    <div class="teamSlides iteam" id="1"><img class="octo-circle team_circle" src="images/DSC01302.jpg" >
+			    	<!--h5 class="octo-text-black  col-sm-5 col-sm-offset-8">Meet Levien! <br> <br>
+			    	He is our Photographer and Illustrator.Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.He is our Photographer and Illlustrator.Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.He is our Photographer and Illlustrator.Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h5-->
 
-		      <div class="center-area">
-		        <div class="our-team" data-title="Het Team van" data-job-title="Octo Marketeers">
-		          <h4 class="note">Het Team van</h4>
-		          <h2 class="title">Octo Marketeers</h2>
-		        </div>
-		        <div class="text-center">
-		          <div class="member-info">
-		            <h4 class="job-title"></h4>
-		            <h3 class="name"></h3>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
+			    </div>
+			    <div class="teamSlides iteam" id="2"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC00405.jpg" ></div>
+			    <div class="teamSlides iteam" id="3"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC08630.jpg" "></div>
+			    <div class="teamSlides iteam" id="4"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC09465.jpg" ></div>
+			    <div class="teamSlides iteam" id="5"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC09708.jpg" ></div>
+			    <div class="teamSlides iteam" id="6"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC01565.jpg" ></div>
+			    <div class="teamSlides  iteam" id="7"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC00458.jpg" ></div>
+			    <div class="teamSlides  iteam" id="8"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC00453.jpg"></div>
+			    <div class="teamSlides   iteam" id="9"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC08630.jpg></div>
+			    <div class="teamSlides   iteam" id="10"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC09011.jpg></div>
+			    <div class="teamSlides   iteam" id="11"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC08630.jpg"></div>
+			    <div class="teamSlides   iteam" id="12"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC09011.jpg" ></div>
+			    <div class="teamSlides   iteam" id="13"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC08630.jpg" ></div>
+			    <div class="teamSlides   iteam" id="14"><h7 class="octo-text-black  col-sm-5 col-sm-offset-1">Als uw bedrijf op wat voor manier dan ook verantwoord bezig is met voedsel en u wilt meer klanten, omzet, gasten en wederverkopers dan komt Octo Marketing in beeld.</h7><img class="octo-circle" src="images/DSC08630.jpg" ></div>
+			</div>
+
+			
+
+			
 
 		</div>
-		<a id="skip-team" href="#footer" style="margin-left: 50%;opacity: 1;">Skip</a>		
-	</section><!-- End of Abouts Section -->	
+		
+			
+	</section><!-- End of Team Section -->	
 	
 
-	<!-- footer Section -->
+	<!-- Footer Section with Contact -->
 	
 	<section id="footer" class="footer">
 		<div class="container">
 			<div class="row">
 				<!-- Contact -->
 				<div class="">
-					<div class="contact_area wow slideInLeft" data-wow-duration="2s">
-						<div class="text-center col-sm-6 col-sm-offset-0">
+					<div class="contact_area wow " data-wow-duration="2s">
+						<div class="text-center col-sm-6 col-sm-offset-0 octo-padding-32">
 							<h2 class="octo-text-white">Brainstormen met Octo?</h2>
 							<h7 class="octo-text-white"><br> Als u uitdagingen wilt bespreken neem dan contact op met Octo Marketing. We brainstormen dan graag met u. Uiteraard in alle vertrouwelijkheid.</h7>
 							<div class="separator"></div>
 						</div>
-						
+
+
+
+							
 						<div class="main_contact_content">
 							<div class="row">
 								<div class="col-sm-3 col-xs-offset-2" >
@@ -372,44 +370,68 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 						
 					</div>
 				</div>
-			</div>			
-		</div>
+			</div>	
 
-		<!-- SLIDESHOW START -->
 
-			<!-- SLIDESHOW ROW -->
-		<div class="octo-slideshow octo-padding-center" style="max-width: 100%;">
-		    
-		    <img class="mySlides octo-padding-32 " src="images/slideshow/DSC08459.jpg" style="height: auto; width: 80vw;" >
-		    <img class="mySlides octo-padding-32 " src="images/slideshow/DSC08463.jpg" style="height: auto; width: 80vw;">
-		    <img class="mySlides octo-padding-32 " src="images/slideshow/DSC08550.jpg" style="height: auto; width: 80vw;">
-		    <img class="mySlides octo-padding-32 " src="images/slideshow/DSC08879.jpg" style="height: auto; width: 80vw;">
-		    <img class="mySlides octo-padding-32 " src="images/slideshow/DSC09108.jpg" style="height: auto; width: 80vw;">
-		    <img class="mySlides octo-padding-32 " src="images/slideshow/DSC09164.jpg" style="height: auto; width: 80vw;">
-
-		   
-		</div>  
-
-  
-
-  			<!-- SLIDESHOW ROW END -->
  
-			<!-- SLIDESHOW END -->
-	</section>
-	
-	<!-- Copyright -->
-	<footer>
-		<div class="single_footer wow zoomIn" data-wow-duration="2s">
-			<p class="octo-text-black octo-left octo-medium" style="margin-left: 15px;"> Copyright Octo Marketing 2017  </p>
-			<p class="octo-text-black octo-right octo-medium" style="margin-right: 15px;">Crafted by <a href="https://github.com/SUKItheFox" > <img src="images/SUKItheFox9.png" width="35" height="auto"></a></p>
 		</div>
-	</footer>
+		
+		<!-- Copyright -->
+		<!--footer>
+			<div>
+				<div class="single_footer wow zoomIn" data-wow-duration="2s" >
+					<p class="octo-text-black octo-left  margin_left_15" > Copyright Octo Marketing 2017  </p>
+					<p class="octo-text-black octo-right margin_right_15"">Crafted by <a href="https://github.com/SUKItheFox" > <img src="images/SUKItheFox9.png" width="35" height="auto"></a></p>
+				</div>
+			</div>
+		</footer-->
 
-	<!-- START SCROLL TO TOP -->
+	</section>
+
+	<section>
+		<!-- SLIDESHOW START -->
+		<!-- SLIDESHOW ROW -->
+		<div class="slideshow_row">
+			<div class="octo-slideshow">
+							    
+				 <img class="mySlides " src="images/slideshow/DSC00326.jpg" >
+				 <img class="mySlides " src="images/slideshow/DSC00332.jpg" >
+				 <img class="mySlides " src="images/slideshow/DSC01312.jpg" >
+				 <img class="mySlides " src="images/slideshow/DSC01350.jpg" >
+			     <img class="mySlides " src="images/slideshow/DSC08459.jpg" >
+				 <img class="mySlides " src="images/slideshow/DSC09108.jpg" >
+				 <img class="mySlides " src="images/slideshow/DSC09164.jpg" >
+				 <img class="mySlides " src="images/slideshow/DSC09224.jpg" >
+				 <img class="mySlides " src="images/slideshow/DSC09231.jpg" >
+				 
+
+
+
+								   
+			</div>
+		</div>	
+		<!-- SLIDESHOW ROW END -->
+			 
+	
+
+		<!-- SLIDESHOW END -->	
+	</section>
+
+	
+		
+
+
+	<!-- End of Footer and Contact Section -->
+	
+	
 	
 	<div class="scrollup">
 		<a href="#"><i class="fa fa-chevron-up"></i></a>
 	</div>
+	
+
+	
+	
 	
 	
 
@@ -496,8 +518,10 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 	    lastScrollTop = st;
 	}
 	</script>
-
-	<script>
+	
+	
+	
+	<!--script>
 	// Shrink logo on scroll down
 
 	window.onscroll = function() {
@@ -507,13 +531,13 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 	function growShrinkLogo() {
 	  var Logo = document.getElementById("Logo")
 	  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-	    Logo.style.width = '5vw';
+	    Logo.style.width = '30px';
 	  } else {
-	    Logo.style.width = '12vw';
+	    Logo.style.width = '40px';
 	  }
 	}
 
-	</script>
+	</script-->
 
 	<script>
 	// Script for the slideshow
@@ -530,6 +554,83 @@ maar letten ook op de herkomst en houden van lokaal.</h7>
 	</script>
 
 	
+
+
+	<script>
+
+	//Script for team section
+
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function currentDiv(n) {
+	  showDivs(slideIndex = n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("teamSlides");
+	  var dots = document.getElementsByClassName("demo");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	     dots[i].className = dots[i].className.replace(" team-color", "");
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " team-color";
+	}
+	</script>
+	<!--script>
+
+
+
+	// Script for team section scrolling elements
+	$(document).ready(function() {
+		$("button[href*=#]").bind("click", function(e) {
+			e.preventDefault(); // prevent hard jump, the default behavior
+
+			var target = $(this).attr("href"); // Set the target as variable
+
+			// perform animated scrolling by getting top-position of target-element and set it as scroll target
+			$(".team-scroll")
+				.stop()
+				.animate(
+					{
+						scrollTop: $(target).offset().top
+					},
+					5,
+					function() {
+						location.hash = target; //attach the hash (#jumptarget) to the pageurl
+					}
+				);
+
+			return false;
+		});
+	});
+
+	$(window)
+		.scroll(function() {
+			var scrollDistance = $(window).scrollTop();
+
+			// Assign active class to photo links while scrolling
+			$(".teamSlides").each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+					$(".team-scroll button.active").removeClass("active");
+					$(".team-scroll button")
+						.eq(i)
+						.addClass("active");
+				}
+			});
+		})
+		.scroll();
+	</script-->
 
 </body>
 </html>
