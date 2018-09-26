@@ -347,6 +347,19 @@ div .first {
 
 }
 
+.botter-img img {
+    max-width: 50em;
+    height: auto;
+}    
+
+
+@media only screen and (max-width:1505px){
+  .botter-img img {
+    max-width: 25em;
+    width: 100%;
+    height: auto;
+    }
+}
 
 
 
